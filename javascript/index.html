@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjualan Barang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: lightblue">
+    <div class="container">
+      <h1>PROGRAM PENJUALAN BARANG</h1>
+      <hr />
+      <label>Nama Barang</label>
+      <input type="text" id="barang" /><br />
+      <label>Harga</label>
+      <input type="text" id="harga" /><br />
+      <label>Jumlah</label>
+      <input type="text" id="jumlah" /><br />
+      <hr />
+      <div class="result">
+        <label>Total</label>
+        <textarea id="total" readonly></textarea><br />
+        <label>Diskon</label>
+        <textarea id="dis" readonly></textarea><br />
+        <label>Bayar</label>
+        <textarea id="bayar" readonly></textarea><br />
+      </div>
+      <hr />
+      <div class="form-group">
+        <input type="button" value="Proses" onclick="hasil()" />
+        <input type="button" value="Reset" onclick="resetForm()" />
+      </div>
+    </div>
+    <script src="penjualan_barang.js"></script>
+  </body>
+</html>
